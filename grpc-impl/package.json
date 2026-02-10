@@ -1,0 +1,21 @@
+{
+  "name": "grpc-impl",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "codegen": "node ./node_modules/@grpc/proto-loader/build/bin/proto-loader-gen-types.js --longs=String --enums=String --defaults --oneofs --grpcLib=@grpc/grpc-js --outDir=src/generated/ ./src/a.proto",
+    "build": "npm run codegen && tsc",
+    "start": "node dist/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@grpc/grpc-js": "^1.14.3"
+  },
+  "devDependencies": {
+    "@grpc/proto-loader": "^0.8.0"
+  }
+}
