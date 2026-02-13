@@ -1,0 +1,27 @@
+{
+  "name": "vitest-withDB-5",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "vitest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@types/express": "^5.0.6",
+    "@types/supertest": "^6.0.3",
+    "express": "^5.2.1",
+    "prisma": "^7.4.0",
+    "supertest": "^7.2.2",
+    "zod": "^4.3.6"
+  },
+  "devDependencies": {
+    "@prisma/adapter-pg": "^7.4.0",
+    "@types/node": "^25.2.3",
+    "vitest": "^4.0.18",
+    "vitest-mock-extended": "^2.0.0"
+  }
+}
