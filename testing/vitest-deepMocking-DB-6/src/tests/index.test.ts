@@ -3,9 +3,7 @@ import request from "supertest";
 import { app } from "../index.js";
 import { prismaClient } from "../db.js";
 
-vi.mock("../db", () => ({
-  prismaClient: { sum: { create: vi.fn() } },
-}));
+vi.mock("../db");
 
 describe("POST /sum", () => {
   it("should return the sum of two numbers", async () => {
